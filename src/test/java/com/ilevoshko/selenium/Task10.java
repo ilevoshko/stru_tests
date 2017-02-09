@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 
-public class Test10 {
+public class Task10 {
     private WebDriver driver;
 
     //Helper method to 'define' the colors, a bad one
