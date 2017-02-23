@@ -35,7 +35,10 @@ public class Task17 {
         //There is only one table so just //tr will work
         int rowCount = driver.findElements(By.xpath("//tr")).size()-1;
 
-        //Click through products check logs
+        //Clearing log before actual checks and printing out in case there were logs
+        driver.manage().logs().get("browser").getAll().forEach(logEntry -> System.out.println(logEntry));
+
+        //Click through products and check logs
         //First product is on the 5th row, adjust if more (sub)categories present
         for (int i=5; i < rowCount; i++){
             //go to product page
